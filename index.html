@@ -3,43 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio website for [Your Name]">
-    <title>Portfolio - [Your Name]</title>
+    <meta name="description" content="Professional portfolio website for Chitundu Nakanyika - Software Engineering Student">
+    <title>Portfolio - Chitundu Nakanyika</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!--
     ============================================================
     ASSIGNMENT 1: RESPONSIVE PORTFOLIO WEBSITE
-    CSC4035 Web Programming and Technologies
-
-    Instructions:
-    1. Complete all TODO sections below
-    2. Use semantic HTML5 elements
-    3. Ensure all images have alt attributes
-    4. Ensure all form inputs have labels
-    5. Test responsiveness at multiple breakpoints
+    Student: Chitundu Nakanyika
+    Course: CSC4035 Web Programming and Technologies
+    University of Zambia
     ============================================================
     -->
 
     <!-- Navigation -->
     <header class="header">
         <nav class="nav">
-            <!-- TODO: Create navigation with links to each section
-                 Requirements:
-                 - Logo/site title
-                 - Navigation links (Home, About, Projects, Contact)
-                 - Mobile-friendly (hamburger menu optional)
-                 - Active state indication
-            -->
             <div class="nav__logo">
-                <a href="#home">[Your Name]</a>
+                <a href="#home">Chitundu Nakanyika</a>
             </div>
             <ul class="nav__menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -47,61 +35,52 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero">
-            <!-- TODO: Create hero section
-                 Requirements:
-                 - Your name (h1)
-                 - Professional tagline
-                 - Call-to-action button
-                 - Consider using Flexbox for layout
-            -->
             <div class="hero__content">
-                <h1>Your Name</h1>
+                <h1>Chitundu Nakanyika</h1>
                 <p class="hero__tagline">
-                    <!-- TODO: Add your professional tagline -->
-                    Web Developer | Designer | Problem Solver
+                    Software Engineering Student | Web Developer | Aspiring Full-Stack Developer
                 </p>
-                <a href="#contact" class="btn btn--primary">Get In Touch</a>
+                <p class="hero__description">
+                    Building innovative solutions through code and design. Passionate about creating responsive, user-friendly web applications that solve real-world problems.
+                </p>
+                <div class="hero__buttons">
+                    <a href="#contact" class="btn btn--primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn--outline">View My Work</a>
+                </div>
             </div>
         </section>
 
         <!-- About Section -->
         <section id="about" class="about">
-            <!-- TODO: Create about section
-                 Requirements:
-                 - Section heading (h2)
-                 - Profile image with alt text
-                 - Professional bio (150+ words)
-                 - Skills list
-                 - Use CSS Grid or Flexbox for layout
-            -->
             <div class="container">
                 <h2>About Me</h2>
                 <div class="about__content">
                     <div class="about__image">
-                        <!-- TODO: Add your profile image -->
-                        <img src="images/profile-placeholder.jpg" alt="Profile photo of [Your Name]">
+                        <img src="images/profile.jpg" alt="Profile photo of Chitundu Nakanyika - Software Engineering Student at UNZA">
                     </div>
                     <div class="about__text">
                         <p>
-                            <!-- TODO: Write your professional bio (150+ words)
-                                 Include:
-                                 - Your background
-                                 - Your interests in web development
-                                 - Your goals
-                                 - What makes you unique
-                            -->
-                            [Your professional bio goes here. Write at least 150 words about yourself,
-                            your background, your passion for web development, and your goals.
-                            This is your opportunity to introduce yourself to potential employers or clients.]
+                            Hello! I'm Chitundu Nakanyika, a fourth-year software engineering student at the University of Zambia with a deep passion for web development and software design. My journey into technology began with a curiosity about how websites work, which quickly evolved into a commitment to mastering both frontend and backend development.
                         </p>
-                        <h3>Skills</h3>
+                        <p>
+                            Throughout my academic career, I've developed a strong foundation in computer science fundamentals, including data structures, algorithms, object-oriented programming, and database design. I'm currently enrolled in CSC4035 Web Programming and Technologies, where I'm honing my skills in modern web development practices using HTML5, CSS3, JavaScript, and responsive design principles.
+                        </p>
+                        <p>
+                            What excites me most about software engineering is the intersection of logic and creativity. I believe the best applications are those that not only function flawlessly but also provide an intuitive and delightful user experience. This philosophy drives me to continuously improve my skills in both technical implementation and user interface design. Beyond coding, I'm passionate about graphic design and exploring how visual aesthetics can enhance digital experiences.
+                        </p>
+                        
+                        <h3>Technical Skills</h3>
                         <ul class="skills-list">
-                            <!-- TODO: Add your skills -->
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>Responsive Design</li>
-                            <!-- Add more skills -->
+                            <li>HTML5 & Semantic Markup</li>
+                            <li>CSS3 & Responsive Design</li>
+                            <li>JavaScript & DOM Manipulation</li>
+                            <li>Python for Backend Development</li>
+                            <li>Java & Object-Oriented Programming</li>
+                            <li>SQL & Database Design</li>
+                            <li>Git & GitHub Version Control</li>
+                            <li>UI/UX Design Principles</li>
+                            <li>Flexbox & CSS Grid Layouts</li>
+                            <li>Graphic Design (Adobe Creative Suite)</li>
                         </ul>
                     </div>
                 </div>
@@ -110,26 +89,23 @@
 
         <!-- Projects Section -->
         <section id="projects" class="projects">
-            <!-- TODO: Create projects section
-                 Requirements:
-                 - Section heading (h2)
-                 - Minimum 3 project cards
-                 - Each card: image, title, description, link(s)
-                 - Use CSS Grid for card layout
-            -->
             <div class="container">
                 <h2>My Projects</h2>
                 <div class="projects__grid">
                     <!-- Project Card 1 -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project1-placeholder.jpg" alt="Screenshot of Project 1">
+                        <img src="images/project1.jpg" alt="Screenshot of Student Course Registration System interface">
                         <div class="project-card__content">
-                            <h3>Project Title 1</h3>
+                            <h3>Student Course Registration System</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A comprehensive web-based course registration system developed for UNZA students. The application enables students to browse available courses, check prerequisites, view class schedules, and register for classes online. Features include real-time seat availability, conflict detection, and automated prerequisite validation. Built using Java for the backend with HTML, CSS, and JavaScript for the frontend interface.
                             </p>
+                            <div class="project-card__tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
                                 <a href="#" class="btn btn--small btn--outline">GitHub</a>
@@ -139,14 +115,18 @@
 
                     <!-- Project Card 2 -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project2-placeholder.jpg" alt="Screenshot of Project 2">
+                        <img src="images/project2.jpg" alt="Screenshot of Zambian Recipe Website homepage">
                         <div class="project-card__content">
-                            <h3>Project Title 2</h3>
+                            <h3>Zambian Recipe Collection</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                An interactive website celebrating traditional Zambian cuisine with modern design. Features include recipe search functionality, ingredient lists, step-by-step cooking instructions, and nutritional information. The site showcases responsive design principles and includes custom graphics highlighting Zambian culture and heritage. Built entirely with HTML5, CSS3, and vanilla JavaScript to demonstrate fundamental web development skills.
                             </p>
+                            <div class="project-card__tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive</span>
+                            </div>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
                                 <a href="#" class="btn btn--small btn--outline">GitHub</a>
@@ -156,14 +136,18 @@
 
                     <!-- Project Card 3 -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project3-placeholder.jpg" alt="Screenshot of Project 3">
+                        <img src="images/project3.jpg" alt="Screenshot of Library Management System dashboard">
                         <div class="project-card__content">
-                            <h3>Project Title 3</h3>
+                            <h3>Library Book Inventory Manager</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A desktop application built with Java Swing for managing university library operations. The system handles book cataloging, member management, check-outs, returns, and generates automated overdue notices. Features advanced search capabilities by title, author, ISBN, and category, along with comprehensive reporting tools for library administrators. Demonstrates proficiency in object-oriented design patterns and database integration.
                             </p>
+                            <div class="project-card__tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">Swing</span>
+                                <span class="tag">SQLite</span>
+                                <span class="tag">MVC</span>
+                            </div>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
                                 <a href="#" class="btn btn--small btn--outline">GitHub</a>
@@ -171,40 +155,51 @@
                         </div>
                     </article>
 
-                    <!-- TODO: Add more project cards if desired -->
+                    <!-- Project Card 4 -->
+                    <article class="project-card">
+                        <img src="images/project4.jpg" alt="Screenshot of responsive portfolio website">
+                        <div class="project-card__content">
+                            <h3>Personal Portfolio Website</h3>
+                            <p>
+                                This responsive portfolio website showcases my projects, skills, and professional journey. Built with modern web technologies including CSS Grid, Flexbox, and custom properties, the site demonstrates mobile-first responsive design principles. Features smooth animations, optimized performance, and accessibility best practices throughout. The design incorporates a Zambian-inspired color palette with forest green and copper orange accents.
+                            </p>
+                            <div class="project-card__tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">Flexbox</span>
+                                <span class="tag">Grid</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="#" class="btn btn--small">Live Demo</a>
+                                <a href="#" class="btn btn--small btn--outline">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="contact">
-            <!-- TODO: Create contact section
-                 Requirements:
-                 - Section heading (h2)
-                 - Contact form with:
-                   - Name field (required)
-                   - Email field (required, type="email")
-                   - Message textarea (required)
-                   - Submit button
-                 - All inputs must have associated labels
-                 - Use HTML5 validation attributes
-            -->
             <div class="container">
                 <h2>Contact Me</h2>
+                <p class="contact__intro">
+                    Have a project in mind or want to collaborate? I'd love to hear from you! Feel free to reach out for internship opportunities, project collaborations, or just a friendly chat about technology and software development.
+                </p>
                 <form class="contact__form" action="#" method="POST">
                     <div class="form-group">
-                        <label for="name">Name</label>
+                        <label for="name">Name *</label>
                         <input
                             type="text"
                             id="name"
                             name="name"
                             required
-                            placeholder="Your Name"
+                            placeholder="Your Full Name"
                             minlength="2"
                         >
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email">Email *</label>
                         <input
                             type="email"
                             id="email"
@@ -223,17 +218,17 @@
                         >
                     </div>
                     <div class="form-group">
-                        <label for="message">Message</label>
+                        <label for="message">Message *</label>
                         <textarea
                             id="message"
                             name="message"
                             required
-                            rows="5"
-                            placeholder="Your message..."
+                            rows="6"
+                            placeholder="Tell me about your project or inquiry..."
                             minlength="10"
                         ></textarea>
                     </div>
-                    <button type="submit" class="btn btn--primary">Send Message</button>
+                    <button type="submit" class="btn btn--primary btn--block">Send Message</button>
                 </form>
             </div>
         </section>
@@ -241,19 +236,15 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <!-- TODO: Create footer
-             Requirements:
-             - Copyright notice
-             - Social media links (optional)
-             - Back to top link (optional)
-        -->
         <div class="container">
-            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+            <div class="footer__content">
+                <p>&copy; 2026 Chitundu Nakanyika. All rights reserved.</p>
+                <p class="footer__tagline">Built with passion, HTML5, and CSS3</p>
+            </div>
             <nav class="footer__social">
-                <!-- TODO: Add your social media links -->
-                <a href="#" aria-label="GitHub">GitHub</a>
-                <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" aria-label="Twitter">Twitter</a>
+                <a href="https://github.com/chitundunakanyika" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">GitHub</a>
+                <a href="https://linkedin.com/in/chitundunakanyika" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LinkedIn</a>
+                <a href="https://twitter.com/chitundunakanyika" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile">Twitter</a>
             </nav>
         </div>
     </footer>
